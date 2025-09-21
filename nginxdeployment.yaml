@@ -10,7 +10,7 @@ kind: Deployment #Deployment in Kubernetes means collection of POD's
 metadata:
   name: nginx-deployment 
 spec:
-  replicas: 10 #10 pods have unique name
+  replicas: 15 #10 pods have unique name
   selector: #only if you mention the selector with labels then the pods with labels will be part of nginx-deployment
     matchLabels:
       app: nginx 
